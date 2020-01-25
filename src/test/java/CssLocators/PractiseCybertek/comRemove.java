@@ -7,10 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class comRemove {
     public static void main(String[] args) throws InterruptedException{
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().fullscreen();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 //        1. Open Chrome browser
 //        2. Go to http://practice.cybertekschool.com/add_remove_elements
         driver.get("http://practice.cybertekschool.com/");
