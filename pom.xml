@@ -33,6 +33,12 @@
         <version>RELEASE</version>
         <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+    <dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>1.0.1</version>
+    </dependency>
 
 
 </dependencies>

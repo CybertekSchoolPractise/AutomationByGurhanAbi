@@ -21,10 +21,12 @@ public class SeleniumEasyCheckBox2 {
 
        // 3. Verify	“Check	All”	button	text	is	“Check	All”
         WebElement CheckAllButton = driver.findElement(By.xpath("//input[@value='Check All']"));
-        if(CheckAllButton.getAttribute("value").equals("Check All")){
-            System.out.println("Check all button verification PASSED!");
+        String expectedText = "Check All";
+        String actualText = CheckAllButton.getAttribute("value");
+        if(actualText.equals(expectedText)){
+            System.out.println("Check all button text verification PASSED!");
         }else{
-            System.out.println("Check all button verification Failed!");
+            System.out.println("Check all button text verification FAILED!");
         }
 
        // 4. Click	to	“Check	All”	button
