@@ -16,10 +16,12 @@ public class DominosTest {
         driver.get("https://www.dominos.com/en/");
 
         // close first window coming to offer new deals automatically
-        WebElement xButton = driver.findElement(By.xpath("//button[@class='card--overlay__" +
-                "close js-closeButton card--overlay__close--circular']"));
-        Thread.sleep(10000);
-        xButton.submit();
+//        WebElement xButton = driver.findElement(By.xpath("//button[@class='card--overlay__" +
+//                "close js-closeButton card--overlay__close--circular']"));
+       Thread.sleep(2000);
+//        xButton.submit();
+        WebElement deliveryButton = driver.findElement(By.xpath("(//a[@data-method='Delivery'])[1]"));
+        deliveryButton.click();
 
 
 
