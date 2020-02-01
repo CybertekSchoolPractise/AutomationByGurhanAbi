@@ -61,8 +61,11 @@ Thread.sleep(2000);
 
 
         // 10.Click on “visa” radio button
+
         // 11.Generate card number using JavaFaker
+
         // 12.Click on “Process”
+
         // 13.Verify success message “New order has been successfully added.”
     }
 }
