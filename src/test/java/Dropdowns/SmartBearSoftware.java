@@ -64,6 +64,13 @@ public class SmartBearSoftware {
         }
         System.out.println(givenName + "does NOT exist in the list. Verification FAILED!!!");
     }
+    public static void printNamesAndCities(WebDriver driver){
+        List<WebElement> allNames = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr/td[2]"));
+        List<WebElement> allCities = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr/td[7]"));
+        for(int i=0; i<allCities.size(); i++){
+            System.out.println(allNames.get(i).getText() + "<--" + allCities.get(i).getText());
+        }
+    }
 
 
 }
