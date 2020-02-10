@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BasePage {
 
-        WebDriver driver;
+       static WebDriver driver;
 
         @Before
         public void setUp(){
